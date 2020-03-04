@@ -2,7 +2,7 @@
 	{
 		height: 100%;
 	}
-	/* cleaned up the flow here */
+
 	body
 	{
 		margin: 0px;
@@ -14,6 +14,7 @@
 		color: #000000;
 	}
 	
+	/* Maybe we should clean this part up?*/
 	
 	h1, h2, h3
 	{
