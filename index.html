@@ -1,12 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
-
-
 Name       : BSOS
 Description: A two-column, fixed-width design with dark color scheme.
 Version    : 1.0
 Released   : 20131203
-
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -49,29 +46,34 @@ Released   : 20131203
 	</div>
 </div>
 <div id="wrapper3">
+	<form action="connect.php" method="post">
 	<div id="portfolio" class="container">
 		<div class="title">
 			<h2>LIVE HELP</h2>
 			<span class="byline">Chat to one of our agents</span> </div>
 		<div class="pbox1">
+			
 			<div class="column1">
 				<div class="box"> <span class="icon icon-list-alt"></span>
 					
 					<h3>ORDER ISSUES</h3>
-					<select class ='select'>
-						<option class="option1">First select</option>
-						<option class="option1">Option</option>
-						<option class="option1">Option</option>
+					<select class ='select' id='skilltags_required' name="skilltags_required">
+						<option class="option1" name='skilltags_required' value="1_sre">First select</option>
+						<option class="option1" value="1_sre">Option</option>
+						<option class="option1" value="1_sre">Option</option>
 					  </select>	
+					  <input type='submit' value='ASK'/>
+
+	
 					  <br/>
-					  <a href="#" id="hello">ASK</a>
+					  <a id="hello">ASK</a>
 					  
 				</div>
 			</div>
 			<div class="column2">
 				<div class="box"> <span class="icon icon-credit-card"></span>
-					<h3>PAYMENT </h3>
-					<select class ='select'>
+					<h3>PAYMENT</h3>
+					<select class ='select' id='skilltags_required' name="skilltags_required">
 						<option class="option1">First select</option>
 						<option class="option1">Option</option>
 						<option class="option1">Option</option>
@@ -82,7 +84,7 @@ Released   : 20131203
 			<div class="column3">
 				<div class="box"> <span class="icon icon-truck"></span>
 					<h3>DELIVERY</h3>
-					<select class ='select'>
+					<select class ='select' id='skilltags_required' name="skilltags_required">
 						<option class="option1">First select</option>
 						<option class="option1">Option</option>
 						<option class="option1">Option</option>
@@ -93,7 +95,7 @@ Released   : 20131203
 			<div class="column4">
 				<div class="box"> <span class="icon icon-spinner"></span>
 					<h3>RETURNS & REFUNDS</h3>
-					<select class ='select'>
+					<select class ='select' id='skilltags_required' name="skilltags_required">
 						<option class="option1">First select</option>
 						<option class="option1">Option</option>
 						<option class="option1">Option</option>
@@ -106,7 +108,7 @@ Released   : 20131203
 			<div class="column1">
 				<div class="box"> <span class="icon icon-tags"></span>
 					<h3>PRODUCT ENQUIRY</h3>
-					<select class ='select'>
+					<select class ='select' id='skilltags_required' name="skilltags_required">
 						<option class="option1">First select</option>
 						<option class="option1">Option</option>
 						<option class="option1">Option</option>
@@ -117,7 +119,7 @@ Released   : 20131203
 			<div class="column2">
 				<div class="box"> <span class="icon icon-headphones"></span>
 					<h3>STOCK ENQUIRY</h3>
-					<select class ='select'>
+					<select class ='select' id='skilltags_required' name="skilltags_required">
 						<option class="option1">First select</option>
 						<option class="option1">Option</option>
 						<option class="option1">Option</option>
@@ -128,7 +130,7 @@ Released   : 20131203
 			<div class="column3">
 				<div class="box"> <span class="icon icon-cogs"></span>
 					<h3>TECHNICAL ISSUES</h3>
-					<select class ='select'>
+					<select class ='select'  id='skilltags_required' name="skilltags_required">
 						<option class="option1">First select</option>
 						<option class="option1">Option</option>
 						<option class="option1">Option</option>
@@ -139,7 +141,7 @@ Released   : 20131203
 			<div class="column4">
 				<div class="box"> <span class="icon icon-money"></span>
 					<h3>PROMOS & GIFT VOUCHERS</h3>
-					<select class ='select'>
+					<select class ='select' id='skilltags_required' name="skilltags_required" >
 						<option class="option1">First select</option>
 						<option class="option1">Option</option>
 						<option class="option1">Option</option>
@@ -148,7 +150,9 @@ Released   : 20131203
 					  <a href="#" id="hello">ASK</a>					</div>
 			</div>
 		</div>
+	
 	</div>
+</form>
 </div>
 <div id="wrapper2">
 	<div id="featured" class="container">
