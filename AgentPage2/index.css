@@ -1,0 +1,173 @@
+
+.AgentInfo{
+  
+  background: white;
+  font-size:15px;
+  border-radius: 1em;
+  color: black;
+  height:auto;
+  padding:0.5em;
+  text-align: center;
+  width: 300px;
+  float:left;
+  border-style: solid;
+}
+body {
+  background-color: white;
+  
+}
+
+/* .container {
+  top: 315px;
+  margin:50px auto;
+  width: 200px;
+  position:relative;
+} */
+
+
+/* switch */
+
+/* Hide default input */
+.toggle input {
+	display: none;
+  }
+  
+  /* The container and background */
+  .toggle {
+	position: relative;
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+  }
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #bc2612;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	transition: all 0.4s;
+  }
+  
+  /* The sliding button */
+  .slider:before {
+	position: absolute;
+	content: "";
+	width: 38px;
+	height: 24px;
+	left: 2px;
+	top: 2px;
+	background-color: #eee;
+	border-radius: 5px;
+	transition: all 0.4s;
+  }
+  
+  /* On checked */
+  input:checked + .slider {
+	background-color: #8cbc13;
+  }
+  input:checked + .slider:before {
+	transform: translateX(40px);
+  }
+
+  /* LOGOUT BUTTON */
+  .parent {
+    position: relative;
+}
+#logoutButton {
+    position: absolute;
+    right: 10px;
+	top: 5px;
+	size:2em;
+	font-size: 25px;
+	border-radius: 2em;
+	background-color:none;
+	border: 2px solid black;
+	color: black;
+	padding: 1em 1.5em;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	display: inline-block;
+	width: 12%; /* to test the test-align property */
+}
+
+
+/* Incoming customer */
+
+#incomingCustomerBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 300px;
+	height: auto;
+	border-style: solid;
+	text-align: left;
+	justify-content: space-between;
+	flex-direction: column;
+	display: flex;
+	border-radius: 1em;
+	padding: 5px;
+}​
+
+  #acceptButton{
+	justify-content: flex-end;
+	display: flex;
+	text-align: center;
+  }
+
+  #acceptButton {
+	box-shadow:inset 0px 1px 0px 0px #39a80a;
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	background-color:#74ad5a;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+}
+#acceptButton:hover {
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	background-color:#68a54b;
+}
+#acceptButton:active {
+	position:relative;
+	top:1px;
+}
+
+#rejectButton{
+	justify-content: flex-end;
+	display: flex;
+	text-align: center;
+  }
+  #rejectButton {
+	box-shadow:inset 0px 1px 0px 0px #ed1f48;
+	background:linear-gradient(to bottom, #ab5b61 5%, #ff1759 100%);
+	background-color:#ab5b61;
+	border:1px solid #e62048;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+}
+#rejectButton:hover {
+	background:linear-gradient(to bottom, #ff1759 5%, #ab5b61 100%);
+	background-color:#ff1759;
+}
+#rejectButton:active {
+	position:relative;
+	top:1px;
+}
