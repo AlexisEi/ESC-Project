@@ -255,7 +255,7 @@
 /* Button Style                                                                  */
 /*********************************************************************************/
 
-	.button
+	/* .button
 	{
 		display: inline-block;
 		margin-top: 2em;
@@ -326,7 +326,7 @@
 	.select{
 		padding: auto;
 		margin-bottom: 1em;
-	}
+	} */
 /*********************************************************************************/
 /* Heading Titles                                                                */
 /*********************************************************************************/
@@ -359,12 +359,13 @@
 	{
 		overflow: hidden;
 		padding: 5em 0em;
-		background: #8DCB89 url(images/header.jpeg) no-repeat center;
+		background: #8DCB89 url(images/header2.jpg) no-repeat center;
 		background-size: cover;
 	}
 
 	#header
 	{
+		
 	}
 
 /*********************************************************************************/
@@ -719,4 +720,10 @@
 	{
 		padding-right: 0.50em;
 	}
-	
+/* click events */
+.hide{
+	display:none;
+  }
+  .show{
+	display:inline-block;
+  }
