@@ -3510,7 +3510,11 @@
 /* Banner */
 
 	#banner {
+<<<<<<< HEAD
 		background-color: #cf7c00;
+=======
+		background-color: #00cdcf;
+>>>>>>> master
 		color: #ffffff;
 		padding: 8em 0 6em 0;
 		text-align: center;
@@ -3521,7 +3525,11 @@
 		}
 
 		#banner a {
+<<<<<<< HEAD
 			color: #cf7c00;
+=======
+			color: #00cdcf;
+>>>>>>> master
 		}
 
 		#banner strong, #banner b {
@@ -3645,7 +3653,11 @@
 			text-transform: uppercase;
 		}
 
+<<<<<<< HEAD
 		@media screen and (max-width: 1280px) {
+=======
+		@media screen and (max-width: 1680px) {
+>>>>>>> master
 
 			#banner {
 				padding: 8em 0 6em 0;
