@@ -14,13 +14,13 @@ Released   : 20131203
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<script src="/Users/alexisei/Desktop/ESC-Project_Alcatel/CustomerPage/customerPage.js"></script>
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
 </head>
 <body>
-<div id="header-wrapper">
-	<div id="header" class="container">
+<div id="header-wrapper"  >
 		<div id="menu">
 			<ul>
 				<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
@@ -30,13 +30,13 @@ Released   : 20131203
 				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
 			</ul>
 		</div>
-		<div id="logo">
+		<div id="logo"  >
 			<h1><a href="#">BSOS</a></h1>
 			<span>Insert  <a href="http://templated.co" rel="nofollow">details</a></span> </div>
 	</div>
 </div>
 <div id="wrapper1">
-	<div id="welcome" class="container">
+	<div id="welcome" class="container" >
 		<div class="title">
 			<h2>BSOS</h2>
 			<span class="byline">Your online destination for all your fashion needs</span> </div>
@@ -46,7 +46,7 @@ Released   : 20131203
 	</div>
 </div>
 <div id="wrapper3">
-	<form action="connect.php" method="post">
+	<form action="BSOS_Cus.php" method="POST">
 	<div id="portfolio" class="container">
 		<div class="title">
 			<h2>LIVE HELP</h2>
@@ -55,18 +55,22 @@ Released   : 20131203
 			
 			<div class="column1">
 				<div class="box"> <span class="icon icon-list-alt"></span>
+					<form></form>
 					
-					<h3>ORDER ISSUES</h3>
-					<select class ='select' id='skilltags_required' name="skilltags_required">
-						<option class="option1" name='skilltags_required' value="1_sre">First select</option>
-						<option class="option1" value="1_sre">Option</option>
-						<option class="option1" value="1_sre">Option</option>
+					<input type="radio" id="support_type" name="support_type" value="Order_Issues">
+                    <label id="RadioButtonTag" for="order issues">Order Issues</label><br>
+                    
+					<select class ='select' id='add_info' name="add_info" >
+						<option class="option1" selected hidden value="">-Supporting Info-</option>
+						<option class="option1" value="Option 1 is abcde">Option 1 is abcde</option>
+						<option class="option1" value="Option 2 is egcgh">Option 2 is egcgh</option>
 					  </select>	
-					  <input type='submit' value='ASK'/>
+                      <input type="text" id="cust_name" name="cust_name" placeholder="Name"><br><br>
+                    
+                      <input type='submit' value='ASK'/>
 
-	
-					  <br/>
-					  <a id="hello">ASK</a>
+                    </form>
+					  
 					  
 				</div>
 			</div>
