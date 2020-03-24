@@ -720,10 +720,18 @@
 	{
 		padding-right: 0.50em;
 	}
-/* click events */
-.hide{
-	display:none;
-  }
-  .show{
-	display:inline-block;
-  }
+/* radio button */
+
+#RadioButtonTag {
+	display: inline-block;
+		margin-bottom: 1em;
+		padding-bottom: 1em;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		text-transform: uppercase;
+		font-size: 1em;
+		color: rgba(0,0,0,0.6);
+		font-weight: bold;
+}
+
+
+
