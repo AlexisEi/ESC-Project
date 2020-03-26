@@ -1,7 +1,17 @@
 <?php
-$cust_name = $_POST['cust_name'];
-$support_type = $_POST['support_type'];
-$add_info = $_POST['add_info'];
+$cust_name = $_POST["cust_name"];
+$temparray = $_POST["add_info"];
+$realvalue = NULL;
+foreach($temparray AS $value){
+    if(!empty($value)){
+        $realvalue = (string) $value;
+        break;
+    }
+}
+// echo $realvalue;
+$temp_explode = explode("|", $realvalue);
+$support_type = $temp_explode[0];
+$add_info = $temp_explode[1];
 
 if (!empty($cust_name) || !empty($support_type) || !empty($add_info)) {
     $host= "localhost";
