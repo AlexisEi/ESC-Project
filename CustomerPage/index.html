@@ -7,6 +7,7 @@ Released   : 20131203
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
 <meta name="keywords" content="" />
@@ -46,28 +47,31 @@ Released   : 20131203
 	</div>
 </div>
 <div id="wrapper3">
-	<form action="connect.php" method="post">
+	<form action="BSOS_Cus.php" method="POST">
 	<div id="portfolio" class="container">
 		<div class="title">
 			<h2>LIVE HELP</h2>
 			<span class="byline">Chat to one of our agents</span> </div>
+			<input type="text" id="cust_name" name="cust_name" placeholder="Please Enter your name"><br><br>
 		<div class="pbox1">
 			
 			<div class="column1">
 				<div class="box"> <span class="icon icon-list-alt"></span>
+					<form></form>
 					
-                    <h3>ORDER ISSUES</h3>
-                    <form>
-					<select class ='select' id='skilltags_required' name="skilltags_required" >
-						<option class="option1" name='skilltags_required' value="1_sre">First select</option>
-						<option class="option1" value="1_sre" onchange="onButtonClick()">Option 1 is abcde</option>
-						<option class="option1" value="1_sre">Option 2 is egcgh</option>
+					<input type="radio" id="support_type" name="support_type" value="Order_Issues">
+                    <label id="RadioButtonTag" for="order issues">Order Issues</label><br>
+                    
+					<select class ='select' id='add_info' name="add_info" >
+						<option class="option1" selected hidden value="">-Supporting Info-</option>
+						<option class="option1" value="Option 1 is abcde">Option 1 is abcde</option>
+						<option class="option1" value="Option 2 is egcgh">Option 2 is egcgh</option>
 					  </select>	
+					  <br/>
                       
                     
-                      <input id ="hello" type='submit' value='ASK'/>
+                      <input type='submit' value='ASK'/>
 
-	
                     </form>
 					  
 					  
@@ -75,82 +79,132 @@ Released   : 20131203
 			</div>
 			<div class="column2">
 				<div class="box"> <span class="icon icon-credit-card"></span>
-					<h3>PAYMENT</h3>
-					<select class ='select' id='skilltags_required' name="skilltags_required">
-						<option class="option1">First select</option>
-						<option class="option1">Option</option>
-						<option class="option1">Option</option>
+					<input type="radio" id="support_type" name="support_type" value="Payment_Issues">
+                    <label id="RadioButtonTag" for="payment issues">Payment Issues</label><br>
+					<select class ='select' id='add_info' name="add_info" >
+						<option class="option1" selected hidden value="">-Supporting Info-</option>
+						<option class="option1" value="Option 3 is abcde">Option 3 is abcde</option>
+						<option class="option1" value="Option 4 is egcgh">Option 4 is egcgh</option>
 					  </select>	
 					  <br/>
-					  <a href="#" id="hello">ASK</a>					</div>
+					  <input type='submit' value='ASK'/>					</div>
 			</div>
 			<div class="column3">
 				<div class="box"> <span class="icon icon-truck"></span>
-					<h3>DELIVERY</h3>
-					<select class ='select' id='skilltags_required' name="skilltags_required">
-						<option class="option1">First select</option>
-						<option class="option1">Option</option>
-						<option class="option1">Option</option>
+					<form></form>
+					
+					<input type="radio" id="support_type" name="support_type" value="Delivery_Issues">
+                    <label id="RadioButtonTag" for="delivery issues">Delivery Issues</label><br>
+                    
+					<select class ='select' id='add_info' name="add_info" >
+						<option class="option1" selected hidden value="">-Supporting Info-</option>
+						<option class="option1" value="Option 5 is abcde">Option 5 is abcde</option>
+						<option class="option1" value="Option 6 is egcgh">Option 6is egcgh</option>
 					  </select>	
 					  <br/>
-					  <a href="#" id="hello">ASK</a>					</div>
+                      
+                    
+                      <input type='submit' value='ASK'/>
+
+					</form>		
+							</div>
 			</div>
 			<div class="column4">
 				<div class="box"> <span class="icon icon-spinner"></span>
-					<h3>RETURNS & REFUNDS</h3>
-					<select class ='select' id='skilltags_required' name="skilltags_required">
-						<option class="option1">First select</option>
-						<option class="option1">Option</option>
-						<option class="option1">Option</option>
+					<form></form>
+					
+					<input type="radio" id="support_type" name="support_type" value="Return_Issues">
+                    <label id="RadioButtonTag" for="return issues">Return & Refund Issues</label><br>
+                    
+					<select class ='select' id='add_info' name="add_info" >
+						<option class="option1" selected hidden value="">-Supporting Info-</option>
+						<option class="option1" value="Option 7 is abcde">Option 7 is abcde</option>
+						<option class="option1" value="Option 8 is egcgh">Option 8 is egcgh</option>
 					  </select>	
 					  <br/>
-					  <a href="#" id="hello">ASK</a>					</div>
+                      
+                    
+                      <input type='submit' value='ASK'/>
+
+					</form>				</div>
 			</div>
 		</div>
 		<div class="pbox2">
 			<div class="column1">
 				<div class="box"> <span class="icon icon-tags"></span>
-					<h3>PRODUCT ENQUIRY</h3>
-					<select class ='select' id='skilltags_required' name="skilltags_required">
-						<option class="option1">First select</option>
-						<option class="option1">Option</option>
-						<option class="option1">Option</option>
+					<form></form>
+					
+					<input type="radio" id="support_type" name="support_type" value="Product_Enquiry">
+                    <label id="RadioButtonTag" for="product enquiry">Product Enquiry</label><br>
+                    
+					<select class ='select' id='add_info' name="add_info" >
+						<option class="option1" selected hidden value="">-Supporting Info-</option>
+						<option class="option1" value="Option 9 is abcde">Option 9 is abcde</option>
+						<option class="option1" value="Option 10 is egcgh">Option 10 is egcgh</option>
 					  </select>	
 					  <br/>
-					  <a href="#" id="hello">ASK</a>					</div>
+                      
+                    
+                      <input type='submit' value='ASK'/>
+
+					</form>						</div>
 			</div>
 			<div class="column2">
 				<div class="box"> <span class="icon icon-headphones"></span>
-					<h3>STOCK ENQUIRY</h3>
-					<select class ='select' id='skilltags_required' name="skilltags_required">
-						<option class="option1">First select</option>
-						<option class="option1">Option</option>
-						<option class="option1">Option</option>
+					<form></form>
+					
+					<input type="radio" id="support_type" name="support_type" value="Stock_Enquiry">
+                    <label id="RadioButtonTag" for="stock enquiry">Stock Enquiry</label><br>
+                    
+					<select class ='select' id='add_info' name="add_info" >
+						<option class="option1" selected hidden value="">-Supporting Info-</option>
+						<option class="option1" value="Option 11 is abcde">Option 11 is abcde</option>
+						<option class="option1" value="Option 12 is egcgh">Option 12 is egcgh</option>
 					  </select>	
 					  <br/>
-					  <a href="#" id="hello">ASK</a>				</div>
+                      
+                    
+                      <input type='submit' value='ASK'/>
+
+					</form>					</div>
 			</div>
 			<div class="column3">
 				<div class="box"> <span class="icon icon-cogs"></span>
-					<h3>TECHNICAL ISSUES</h3>
-					<select class ='select'  id='skilltags_required' name="skilltags_required">
-						<option class="option1">First select</option>
-						<option class="option1">Option</option>
-						<option class="option1">Option</option>
+					<form></form>
+					
+					<input type="radio" id="support_type" name="support_type" value="Technical_Issues">
+                    <label id="RadioButtonTag" for="technical issues">Technical Issues</label><br>
+                    
+					<select class ='select' id='add_info' name="add_info" >
+						<option class="option1" selected hidden value="">-Supporting Info-</option>
+						<option class="option1" value="Option 13 is abcde">Option 13 is abcde</option>
+						<option class="option1" value="Option 14 is egcgh">Option 14 is egcgh</option>
 					  </select>	
 					  <br/>
-					  <a href="#" id="hello">ASK</a>				</div>
+                      
+                    
+                      <input type='submit' value='ASK'/>
+
+					</form>				</div>
 			</div>
 			<div class="column4">
 				<div class="box"> <span class="icon icon-money"></span>
-					<h3>PROMOS & GIFT VOUCHERS</h3>
-					<select class ='select' id='skilltags_required' name="skilltags_required" >
-						<option class="option1">First select</option>
-						<option class="option1">Option</option>
-						<option class="option1">Option</option>
+					<form></form>
+					
+					<input type="radio" id="support_type" name="support_type" value="Promo_Issues">
+                    <label id="RadioButtonTag" for="promo issues">Promo & Voucher Issues</label><br>
+                    
+					<select class ='select' id='add_info' name="add_info" >
+						<option class="option1" selected hidden value="">-Supporting Info-</option>
+						<option class="option1" value="Option 5 is abcde">Option 15 is abcde</option>
+						<option class="option1" value="Option 6 is egcgh">Option 16is egcgh</option>
 					  </select>	
 					  <br/>
-					  <a href="#" id="hello">ASK</a>					</div>
+                      
+                    
+                      <input type='submit' value='ASK'/>
+
+					</form>						</div>
 			</div>
 		</div>
 	
