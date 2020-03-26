@@ -2,7 +2,6 @@
 $ad_name = $_POST["ad_name"];
 $skill_tags = $_POST["skill_tags"];
 $newvalues = implode(",", $skill_tags);
-print_r($_POST);
 
 if (!empty($ad_name) || !empty($newvalues)) {
     $host= "localhost";
